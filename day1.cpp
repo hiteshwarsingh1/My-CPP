@@ -22,7 +22,7 @@ int main(){
 	swap(&a,&b);
 	cout<<"l"<<&a;
 //	cout<<b<<" "<<a;
-//	cout<<*&a;
+//	cout<<*&a; 
 }
 void swap(int *x,int *y){
 	cout<<x<<" "<<*x<<" "<<&x<<"\n";
