@@ -18,18 +18,25 @@ int main(){
 //	a==b?cout<<"True1":cout<<"False1";
 //	a==c?cout<<"True2":cout<<"False2";
 //	cout<<b<<" "<<a<<"\n";
-	cout<<"f"<<&a<<"\n";
-	swap(&a,&b);
-	cout<<"l"<<&a;
+//	cout<<"f"<<&a<<"\n";
+//	swap(&a,&b);
+//	cout<<"l"<<&a;
 //	cout<<b<<" "<<a;
 //	cout<<*&a; 
+
+
+
+	int* ref=&a;
+	*ref=*ref+2;
+	cout<<&ref<<endl;
+	cout<<a;
 }
-void swap(int *x,int *y){
-	cout<<x<<" "<<*x<<" "<<&x<<"\n";
-	int temp;
-	temp=*x;
-	*x=*y;
-	*y=temp;
-	//return;
-	return;
-}
+//void swap(int *x,int *y){
+//	cout<<x<<" "<<*x<<" "<<&x<<"\n";
+//	int temp;
+//	temp=*x;
+//	*x=*y;
+//	*y=temp;
+//	//return;
+//	return;
+//}
