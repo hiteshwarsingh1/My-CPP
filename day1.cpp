@@ -1,6 +1,8 @@
 #include<iostream>
 using namespace std;
-void swap(int *x,int *y);
+void swap1(int *x,int *y);
+void swap2(int x,int y);
+void swap3(int &x,int &y);
 int main(){
 //	int a=10;
 ////	cout<<a;
@@ -23,20 +25,48 @@ int main(){
 //	cout<<"l"<<&a;
 //	cout<<b<<" "<<a;
 //	cout<<*&a; 
-
-
-
-	int* ref=&a;
-	*ref=*ref+2;
-	cout<<&ref<<endl;
-	cout<<a;
+	
+//	int& ref=a;
+//	cout<<ref<<endl;
+//	
+//	int* ptr;
+//	ptr=&a;
+//	*ptr=*ptr+2;
+//	
+//	cout<<*ptr<<endl;
+//	cout<<a;
+	cout<<a<<" "<<b<<endl;
+	swap1(&a,&b);
+	cout<<a<<" "<<b<<endl;
+	cout<<a<<" "<<b<<endl;
+	swap3(a,b);
+	cout<<a<<" "<<b<<endl;
 }
-//void swap(int *x,int *y){
-//	cout<<x<<" "<<*x<<" "<<&x<<"\n";
-//	int temp;
-//	temp=*x;
-//	*x=*y;
-//	*y=temp;
-//	//return;
-//	return;
-//}
+void swap1(int *x,int *y){
+	cout<<x<<" "<<*x<<" "<<&x<<"\n";
+	int temp;
+	temp=*x;
+	*x=*y;
+	*y=temp;
+	//return;
+	return;
+}
+void swap2(int x,int y){
+	cout<<x<<" "<<y<<"\n";
+	int temp;
+	temp=x;
+	x=y;
+	y=temp;
+	cout<<x<<" "<<y<<"\n";
+	//return;
+	return;
+}
+void swap3(int &x,int &y){
+	
+	int temp;
+	temp=x;
+	x=y;
+	y=temp;
+	//return;
+	return;
+}
