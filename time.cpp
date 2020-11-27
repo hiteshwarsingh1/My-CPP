@@ -21,5 +21,5 @@ int main()
 	b1.pages=350;
 	b1.cost=500;
 	printb(&b1);
-	cout<<"my Name";
+	cout<<"my Name tushar";
 }
